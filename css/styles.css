@@ -1,0 +1,140 @@
+:root {
+  /* colors */
+  --black: #000000;
+  --primary: #1d957f;
+  --grey: #616161;
+  --white: #ffff;
+  /* fonts */
+  --font-base: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.features__header__title {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: var(--black);
+}
+.features__header__title__featured {
+  color: var(--primary);
+}
+.features__header__desc {
+  height: 52px;
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  color: var(--grey);
+}
+
+.features__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 80px 0;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  width: 100%;
+  max-width: 278px;
+  padding: 36px 24px;
+  background: var(--white);
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+}
+.feature-card__image {
+  height: 72px;
+}
+.feature-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.feature-card__body__title {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--black);
+}
+.feature-card__body__desc {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--grey);
+}
+
+.feature-card__1 {
+  position: relative;
+}
+.feature-card__1::before {
+  position: absolute;
+  top: -80px;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 127px;
+  height: 127px;
+  background: var(--primary);
+  border-radius: 30px;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+.feature-card__3 {
+  position: relative;
+}
+.feature-card__3::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 127px;
+  height: 127px;
+  background: var(--primary);
+  border-radius: 30px;
+  transform: translateY(50%) rotate(30deg);
+  z-index: -1;
+}
+
+.features__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}

@@ -5,7 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coronapp</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <section class="features">
+        <header class="features__header">
+          <h2 class="features__header__title">
+            <span class="features__header__title__featured"
+              >Cuidado de la salud</span
+            ><br />
+            al alcance de tu mano.
+          </h2>
+          <p class="features__header__desc">
+            Llevando funciones de atención médica premium a tu alcance.
+          </p>
+        </header>
+
+        <div class="features__cards">
+          <article class="feature-card feature-card__1">
+            <img
+              class="feature-card__image"
+              src="./assets/person.svg"
+              alt="person icon"
+            />
+            <div class="feature-card__body">
+              <p class="feature-card__body__title">Comprobador de síntomas</p>
+              <p class="feature-card__body__desc">
+                Compruebe si está infectado por COVID-19 con nuestro Comprobador
+                de síntomas
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              class="feature-card__image"
+              src="./assets/nurse.svg"
+              alt="nurse icon"
+            />
+            <div class="feature-card__body">
+              <p class="feature-card__body__title">Soporte médico 24x7</p>
+              <p class="feature-card__body__desc">
+                Consulte con más de 10,000 trabajadores de la salud acerca de
+                sus inquietudes.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card__3">
+            <img
+              class="feature-card__image"
+              src="./assets/heart-status.svg"
+              alt="heart status icon"
+            />
+            <div class="feature-card__body">
+              <p class="feature-card__body__title">Condiciones</p>
+              <p class="feature-card__body__desc">
+                Llevando funciones de atención médica premium a tu alcance.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <footer class="features__footer">
+          <img
+            src="./assets/google-play.png"
+            alt="Dowload app on Google Play"
+          />
+          <img src="./assets/apple-store.png" alt="Dowload app on App Store" />
+        </footer>
+      </section>
+    </div>
+  </body>
 </html>
