@@ -6,6 +6,7 @@
   --white: #ffff;
   /* fonts */
   --font-base: "Rubik", sans-serif;
+  --caption-regular: 400 12px/138.5% var(--font-base);
 }
 
 * {
@@ -31,12 +32,7 @@
   gap: 16px;
 }
 .features__header__title {
-  font-family: var(--font-base);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-
+  font: 700 32px/38px var(--font-base);
   color: var(--black);
 }
 .features__header__title__featured {
@@ -44,11 +40,8 @@
 }
 .features__header__desc {
   height: 52px;
-  font-family: var(--font-base);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 138.5%;
+  font: var(--caption-regular);
+  text-align: center;
   letter-spacing: 0.08em;
   color: var(--grey);
 }
@@ -69,9 +62,9 @@
   width: 100%;
   max-width: 278px;
   padding: 36px 24px;
+  border-radius: 8px;
   background: var(--white);
   box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
-  border-radius: 8px;
 }
 .feature-card__image {
   height: 72px;
@@ -82,21 +75,13 @@
   gap: 4px;
 }
 .feature-card__body__title {
-  font-family: var(--font-base);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 138.5%;
+  font: 700 16px/138.5% var(--font-base);
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--black);
 }
 .feature-card__body__desc {
-  font-family: var(--font-base);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 138.5%;
+  font: var(--caption-regular);
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--grey);
@@ -139,18 +124,14 @@
 .features__footer {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .features__header__title {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 126%;
+    font: 700 44px/126% var(--font-base);
     text-align: center;
   }
   .features__header__desc {
