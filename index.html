@@ -18,22 +18,28 @@
   <body>
     <section class="experts" id="experts">
       <div class="wrapper">
-        <div class="experts__counter-container">
+        <div id="experts-counter" class="experts__counter-container">
           <div class="experts__counter__box experts__counter__box--1"></div>
           <div class="experts__counter__box experts__counter__box--2"></div>
           <div class="experts__counter__box experts__counter__box--3"></div>
 
           <div class="experts__counter">
             <div class="experts__counter__item">
-              <span class="experts__counter__item__number">2m</span>
+              <span id="users-number" class="experts__counter__item__number"
+                >0m</span
+              >
               <span class="experts__counter__item__type">Usuarios</span>
             </div>
             <div class="experts__counter__item">
-              <span class="experts__counter__item__number">78</span>
+              <span id="country-number" class="experts__counter__item__number"
+                >0</span
+              >
               <span class="experts__counter__item__type">Países</span>
             </div>
             <div class="experts__counter__item">
-              <span class="experts__counter__item__number">10,000+</span>
+              <span class="experts__counter__item__number" id="experts-number"
+                >10,000+</span
+              >
               <span class="experts__counter__item__type">Expertos medicos</span>
             </div>
           </div>
@@ -125,5 +131,7 @@
         </footer>
       </section>
     </div>
+
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
