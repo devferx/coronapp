@@ -8,6 +8,7 @@
   --bg-2: #fafbfd;
   /* fonts */
   --font-base: "Rubik", sans-serif;
+  --title: 700 32px/38px var(--font-base);
   --caption-regular: 400 12px/138.5% var(--font-base);
 }
 
@@ -44,45 +45,29 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 420px;
 }
 .experts__content__title {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font: var(--title);
 }
 .experts__content__title__primary {
   color: var(--primary);
 }
 .experts__content__desc {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 138.5%;
-  /* or 17px */
   color: var(--grey);
+  font: 400 12px/17px var(--font-base);
 }
 .experts__content__link {
   display: block;
-  width: 100%;
   padding: 14px 18px;
-  font-family: var(--font-base);
-  font-style: normal;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 12px;
-
-  text-align: center;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 8px;
+  width: 100%;
   color: var(--white);
+  font: 800 10px/12px var(--font-base);
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   background: var(--primary);
+  border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,6 +77,9 @@
   .experts-container {
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+  .experts__content {
+    max-width: 420px;
   }
   .experts__content__title {
     font-size: 44px;
@@ -114,7 +102,7 @@
   gap: 16px;
 }
 .features__header__title {
-  font: 700 32px/38px var(--font-base);
+  font: var(--title);
   color: var(--black);
 }
 .features__header__title__featured {
