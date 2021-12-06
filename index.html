@@ -16,7 +16,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="hero">
+    <nav class="navbar">
+      <div class="navbar-container wrapper">
+        <img src="./assets/text-logo.svg" alt="Coronapp" />
+
+        <ul class="navbar__menu">
+          <li><a href="#home">INICIO</a></li>
+          <li><a href="#support">CARACTERISTICAS</a></li>
+          <li><a href="#experts">APOYO</a></li>
+          <li><a href="#features">CONTÁCTENOS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero" id="home">
       <div class="hero__bg"></div>
       <div class="hero-container wrapper">
         <img class="hero__image" src="./assets/hero.svg" alt="Hero image" />
@@ -32,7 +44,7 @@
         </div>
       </div>
     </section>
-    <section class="support">
+    <section class="support" id="support">
       <div class="support-container wrapper">
         <div class="support__phone">
           <article class="phone-card">
@@ -115,7 +127,7 @@
       </div>
     </section>
     <div class="wrapper">
-      <section class="features">
+      <section class="features" id="features">
         <header class="features__header">
           <h2 class="features__header__title">
             <span class="features__header__title__featured"
