@@ -29,5 +29,6 @@ const expertsObserver = new IntersectionObserver(function ([entry]) {
     incrementValue: 20,
     time: 1,
   });
+  expertsObserver.disconnect();
 });
 expertsObserver.observe(expertsCounter);

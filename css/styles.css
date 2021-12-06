@@ -25,6 +25,96 @@
   padding: 16px;
 }
 
+.support {
+  padding: 80px 0;
+}
+.support-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.phone-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 203px;
+  max-width: 360px;
+  background: var(--white);
+  border-radius: 10.5181px;
+  border: 2px solid var(--primary);
+  box-shadow: 0px 2.10363px 2.10363px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+.phone-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  width: 20px;
+  height: 90px;
+  background: var(--primary);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.phone-card img {
+  width: 60%;
+  margin-top: 90px;
+}
+.phone-card__content {
+  margin-top: 24px;
+}
+.phone-card__content__title {
+  color: #262626;
+  font: 700 32px/39px var(--font-base);
+  text-align: center;
+}
+.phone-card__content__desc {
+  margin-top: 16px;
+  color: #262626;
+  font: 16px/22px var(--font-base);
+  text-align: center;
+  opacity: 0.5;
+}
+.phone-card__dots {
+  display: flex;
+  gap: 4px;
+  margin-top: 90px;
+}
+.phone-card__dots__item {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e4e4e4;
+}
+.phone-card__dots__item.phone-card__dots__item--active {
+  background: var(--primary);
+}
+.support__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .phone-card {
+    width: 100%;
+  }
+  .support-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .support__content {
+    width: 379px;
+  }
+}
+
 .experts {
   padding: 80px 0;
   background: var(--bg-2);
@@ -111,13 +201,13 @@
   flex-direction: column;
   gap: 16px;
 }
-.experts__content__title {
+.title {
   font: var(--title);
 }
-.experts__content__title__primary {
+.title__primary {
   color: var(--primary);
 }
-.experts__content__desc {
+.content__desc {
   color: var(--grey);
   font: 400 12px/17px var(--font-base);
 }
@@ -158,10 +248,9 @@
   .experts__content {
     max-width: 420px;
   }
-  .experts__content__title {
+  .title {
     font-size: 44px;
-    line-height: 126%;
-    /* or 55px */
+    line-height: 55px;
   }
   .experts__content__link {
     max-width: min-content;

@@ -9,13 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <section class="support">
+      <div class="support-container wrapper">
+        <div class="support__phone">
+          <article class="phone-card">
+            <img src="./assets/patient.svg" alt="Patient" />
+            <div class="phone-card__content">
+              <p class="phone-card__content__title">
+                Enfermedad por el nuevo coronavirus
+              </p>
+              <p class="phone-card__content__desc">
+                La COVID-19 afecta de distintas maneras en función de cada
+                persona.
+              </p>
+            </div>
+            <div class="phone-card__dots">
+              <div class="phone-card__dots__item"></div>
+              <div
+                class="phone-card__dots__item phone-card__dots__item--active"
+              ></div>
+              <div class="phone-card__dots__item"></div>
+            </div>
+          </article>
+        </div>
+        <div class="support__content">
+          <h3 class="title">
+            Mantente seguro con <span class="title__primary">Coronapp.</span>
+          </h3>
+          <p class="content__desc">
+            Soporte 24x7 y plataforma móvil fácil de usar para llevar la
+            atención médica a su alcance. Regístrese y sea parte de la nueva
+            cultura de la salud.
+          </p>
+          <a href="#" class="experts__content__link">EMPEZAR</a>
+        </div>
+      </div>
+    </section>
     <section class="experts" id="experts">
       <div class="wrapper">
         <div id="experts-counter" class="experts__counter-container">
@@ -49,11 +85,11 @@
             <img src="./assets/video.svg" alt="video" />
           </div>
           <div class="experts__content">
-            <h2 class="experts__content__title">
+            <h2 class="title">
               Habla con los
-              <span class="experts__content__title__primary">expertos.</span>
+              <span class="title__primary">expertos.</span>
             </h2>
-            <p class="experts__content__desc">
+            <p class="content__desc">
               Reserve citas o envíe consultas a miles de foros sobre problemas
               de salud y prevención contra el Corona Virus.
             </p>
